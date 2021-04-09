@@ -1,0 +1,142 @@
+[
+    {
+        "title": "Canva",
+        "link": "canva.com"
+    },
+    {
+        "title": "Discord",
+        "link": "discord.com"
+    },
+    {
+        "title": "Facebook",
+        "link": "facebook.com"
+    },
+    {
+        "title": "Google",
+        "link": "google.com"
+    },
+    {
+        "title": "Google Analytics",
+        "link": "google.com/analytics"
+    },
+    {
+        "title": "Google Books",
+        "link": "google.com/books"
+    },
+    {
+        "title": "Google Calculator",
+        "link": "google.com/search?q=calculator"
+    },
+    {
+        "title": "Google Classroom",
+        "link": "google.com/classroom"
+    },
+    {
+        "title": "Google Docs",
+        "link": "google.com/docs"
+    },
+    {
+        "title": "Google Drive",
+        "link": "google.com/drive"
+    },
+    {
+        "title": "Google Earth",
+        "link": "google.com/earth"
+    },
+    {
+        "title": "Google MyBusiness",
+        "link": "google.com/business"
+    },
+    {
+        "title": "Google Pay",
+        "link": "google.com/pay"
+    },
+    {
+        "title": "Google Podcasts",
+        "link": "google.com/podcasts"
+    },
+    {
+        "title": "Google Sheets",
+        "link": "google.com/sheets"
+    },
+    {
+        "title": "Google Shopping",
+        "link": "google.com/shopping"
+    },
+    {
+        "title": "Google Slides",
+        "link": "google.com/slides"
+    },
+    {
+        "title": "Instagram",
+        "link": "instagram.com"
+    },
+    {
+        "title": "Microsoft Word",
+        "link": "word.office.com"
+    },
+    {
+        "title": "Microsoft PowerPoint",
+        "link": "powerpoint.office.com"
+    },
+    {
+        "title": "Microsoft Calender",
+        "link": "outlook.live.com/calendar"
+    },
+    {
+        "title": "Microsoft Excel",
+        "link": "excel.office.com"
+    },
+    {
+        "title": "Microsoft OneDrive",
+        "link": "onedrive.live.com"
+    },
+    {
+        "title": "Microsoft OneNote",
+        "link": "onenote.com"
+    },
+    {
+        "title": "Microsoft Outlook",
+        "link": "outlook.live.com"
+    },
+    {
+        "title": "Microsoft Teams",
+        "link": "teams.microsoft.com"
+    },
+    {
+        "title": "Netflix",
+        "link": "netflix.com"
+    },
+    {
+        "title": "Paypal",
+        "link": "paypal.com"
+    },
+    {
+        "title": "Skype",
+        "link": "web.skype.com"
+    },
+    {
+        "title": "Spotify",
+        "link": "spotify.com"
+    },
+    {
+        "title": "Trello",
+        "link": "trello.com"
+    },
+    {
+        "title": "Twitter",
+        "link": "twitter.com"
+    },
+    {
+        "title": "WhatsApp",
+        "link": "whatsapp.com"
+    },
+    {
+        "title": "YouTube",
+        "link": "youtube.com"
+    },
+    {
+        "title": "zoom",
+        "link": "zoom.us"
+    }
+]
