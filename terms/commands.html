@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title> Command List &#9642; Jonin </title>
+
+    <link href="https://i.imgur.com/5oVTRwF.png" rel="icon">
+    <link href="https://i.imgur.com/5oVTRwF.png" rel="apple-touch-icon">
+    <meta name="theme-color" content="#FF0092">
+    <meta property="og:title" content="Command List - Jonin">
+    <meta property="og:description" content="[PLACEHOLDER].. idk what to put here">
+    <meta property="og:image" content="https://i.imgur.com/GTuIFzk.png">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script> history.scrollRestoration = "manual" </script>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+        new Crate({ server: '666312150775758853', channel: '666312150775758861', shard: 'https://e.widgetbot.io' });
+    </script>
+    <!-- <style>
+        table tr td:hover {
+            animation: glow 800ms ease-out infinite alternate;
+            outline: none;
+        }
+
+        @keyframes glow {
+            0% {
+                border-color: #FF0092;
+                box-shadow: 0 0 5px #FF0092;
+            }
+
+            100% {
+                border-color: #FF0092;
+                box-shadow: 0 0 20px#FF0092;
+            }
+        }
+    </style> -->
+</head>
+
+<body>
+    <main>
+        <!-- Command List -->
+        <section>
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2> Jonin's Command List </h2>
+                </div>
+                <div id="table">
+                </div>
+                <br />
+                <div id="key">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" style="background-color: rgba(0,0,0,0.8);">
+        <h5> Jonin - A Discord Bot </h5>
+    </footer>
+
+    <div id="preloader"></div>
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+<script>
+    function counts() {
+        let res = new XMLHttpRequest();
+        res.open(`GET`, `https://spreadsheets.google.com/feeds/cells/1Qt9_MFzGkOIkhbm82kPrTKH7xh5zSCecYTVrsJ3EKt4/2/public/full?alt=json`, true);
+        res.send();
+        res.onreadystatechange = function () {
+            let body = JSON.parse(res.responseText), total = [], final = [], flag = true, draw = true;
+            body.feed.entry.forEach(data => { total.push(data.content.$t); });
+            for (let i = 0; i < total.length; i++) {
+                if (!total[i].includes(`%%`)) {
+                    draw = true;
+                    if (final.length != 0) { final.push(`</table><br>`); };
+                    final.push(`<font color='#C0C0C0'><table width='100%'><tr><td colspan='8' align='center' style='font-size:20px;  background-color:rgba(255, 0, 146, 0.7); text-shadow: 1px 1px #191919;'><b>${total[i].toUpperCase()}</b></td></tr>`);
+                    final.push(`<tr><td width='20%' style="background-color: rgba(255, 0, 146, 0.3); text-shadow: 1px 1px #191919; padding-left:5px;">COMMAND</td><td width='35%' style="background-color: rgba(255, 0, 146, 0.3); text-shadow: 1px 1px #191919; padding-left:5px;">DESCRIPTION</td><td width='20%' style="background-color: rgba(255, 0, 146, 0.3); text-shadow: 1px 1px #191919; padding-left:5px;">ALIASES</td><td width='5%' style="background-color: rgba(255, 0, 146, 0.3); text-shadow: 1px 1px #191919; padding-left:5px;">NSFW</td><td width='6%' style="background-color: rgba(255, 0, 146, 0.3); text-shadow: 1px 1px #191919; padding-left:5px;">DOWN</td><td width='5%' style="background-color: rgba(255, 0, 146, 0.3); text-shadow: 1px 1px #191919; padding-left:4px;">DM</td><td width='5%' style="background-color: rgba(255, 0, 146, 0.3); text-shadow: 1px 1px #191919; padding-left:5px;">RANK</td><td width='4%' style="background-color: rgba(255, 0, 146, 0.3); text-shadow: 1px 1px #191919; padding-left:5px;">CD</td></tr>`)
+                } else {
+                    flag = true;
+                    draw = draw ? false : true;
+                    let array = total[i].split(`%%`);
+                    final.push(`<tr>`);
+                    for (let i = 0; i < array.length; i++) {
+                        let red = false;
+                        if (i === 4 && array[i] === array[4] && array[i].toUpperCase() === `YES`) { red = true; };
+                        final.push(`<td ${red ? `style="background-color: rgba(255, 0, 0, 0.5); text-shadow: 1px 1px #191919; padding-left:5px;"` : draw ? `style="background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919; padding-left:5px;"` : `style="padding-left:5px;"`}>${array[i]}</td>`);
+                    }
+                    final.push(`</tr>`);
+                }
+            }
+            document.getElementById("table").innerHTML = final.join(``);
+            let key = [`<font color='#C0C0C0'><table width='100%'><tr><td colspan='8' align='center' style='font-size:20px;  background-color:rgba(255, 0, 146, 0.7); text-shadow: 1px 1px #191919;'><b>KEY</b></td></tr><tr><td width='30%' style="background-color: rgba(255, 0, 146, 0.3); text-shadow: 1px 1px #191919;">TYPE</td><td width='70%' style="background-color: rgba(255, 0, 146, 0.3); text-shadow: 1px 1px #191919;">DESCRIPTION</td></tr>`];
+            key.push(`<tr><td style="padding-left:5px;">NSFW</td><td style="padding-left:5px;">Will be <b><i>Yes</i></b> if the command contain content that is Not Safe For Work (18+).</td></tr>`);
+            key.push(`<tr><td style="padding-left:5px; background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919;">DOWN</td><td style="padding-left:5px; background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919;">Will be <b><i>Yes</i></b> if the command is currently not working or is being updated.</td></tr>`);
+            key.push(`<tr><td style="padding-left:5px;">DM</td><td style="padding-left:5px;">Will be <b><i>Yes</i></b> if the command is open to run on the bot's Direct Messages.</td></tr>`);
+            key.push(`<tr><td style="padding-left:5px; background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919;">CD</td><td style="padding-left:5px; background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919;">The seconds of cooldown before the command can be run again.</td></tr>`);
+            key.push(`<tr><td style="padding-left:5px;">RANK</td><td style="padding-left:5px;">The minimum rank required to run the command (see more below).</td></tr>`);
+            key.push(`<tr><td width='100%' align='center' colspan='8' style="background-color: rgba(255, 0, 146, 0.3); text-shadow: 1px 1px #191919; padding-left:5px;">RANKS</td></tr>`);
+            key.push(`<tr><td width='20%' style="padding-left:5px;">Rank 0</td><td width='80%' style="padding-left:5px;">Open to everyone.</td></tr>`);
+            key.push(`<tr><td width='20%' style="padding-left:5px; background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919;">Rank 1</td><td width='80%' style="padding-left:5px; background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919;">Teir 1 Patreon Subscriber [Shrine Maiden].</td></tr>`);
+            key.push(`<tr><td width='20%' style="padding-left:5px;">Rank 2</td><td width='80%' style="padding-left:5px;">Teir 2 Patreon Subscriber [Gate Keeper].</td></tr>`);
+            key.push(`<tr><td width='20%' style="padding-left:5px; background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919;">Rank 3</td><td width='80%' style="padding-left:5px; background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919;">Teir 3 Patreon Subscriber [Alder].</td></tr>`);
+            key.push(`<tr><td width='20%' style="padding-left:5px;">Rank 4</td><td width='80%' style="padding-left:5px;">Host support/donator [Supporter].</td></tr>`);
+            key.push(`<tr><td width='20%' style="padding-left:5px; background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919;">Rank 5</td><td width='80%' style="padding-left:5px; background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919;">Approved member of Jonin.</td></tr>`);
+            key.push(`<tr><td width='20%' style="padding-left:5px;">Rank 6</td><td width='80%' style="padding-left:5px;">Moderator of the Jonin Support Server.</td></tr>`);
+            key.push(`<tr><td width='20%' style="padding-left:5px; background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919;">Rank 7</td><td width='80%' style="padding-left:5px; background-color: rgba(192, 192, 192, 0.2); text-shadow: 1px 1px #191919;">Developers of Jonin.</td></tr>`);
+            key.push(`<tr><td width='20%' style="padding-left:5px;">Rank 8</td><td width='80%' style="padding-left:5px;">Owners of Jonin.</td></tr>`);
+            document.getElementById("key").innerHTML = `${key.join(``)}</table>`;
+        }
+    }
+    window.onload = function () {
+        counts();
+    }
+</script>
+
+</html>
